@@ -1,5 +1,37 @@
-@media (max-width: 1024px) {
-
-// body{display: none !important}
-
+@media (min-width:1320px) and (max-width:1365px) {
+    .pagetopskin {
+        width: 986px !important;
+        margin-left: -493px !important;
+        iframe {
+            width: 1986px !important;
+        }
+    }
+    .bodyleft {
+        margin-left: -653px !important;
+    }
+    .bodyright {
+        margin-left: 493px !important;
+    }
 }
+
+   @media (min-width:1366px) {
+    .container {
+        width: 980px !important;
+    }
+    .pagetopskin {
+        width: 976px !important;
+        margin-left: -493px !important;
+      
+    }
+  
+    .bodyleft {
+        margin-left: -673px !important;
+    }
+    .bodyright {
+        margin-left: 513px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    // body{display: none !important}
+} 

@@ -1,0 +1,94 @@
+.row {
+    width: 100%;
+    height: 3200px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+} //giydirme reklamlarda istenirse sol ve sağa uygulamak için
+#sizetext {
+    @extend .fixed;
+    right: 0;
+    background-color: #fff;
+    font-weight: 700;
+    z-index: 9999;
+}
+
+.container {@include easing250;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #d2d2d2;
+    height: 1933px;
+    display: block;
+}
+
+.pagetopskin {
+    @include easing150;
+    position: absolute;
+    width: 966px;
+    left: 50%;
+    top: 0;
+    margin-left: -483px;
+    display: block;
+    height: 100px;
+}
+
+.pagetop {
+    width: 960px;
+    margin: 0 auto 10px auto;
+    display: block;
+    .firma {
+        width: 100%;
+        margin: 0 auto;
+        img {
+            width: 960px;
+        }
+        iframe {
+            width: 960px;
+        }
+        .firmaikili {
+            width: 960px;
+            overflow: hidden;
+            a {
+                display: block;
+                float: left;
+                img {
+                    width: 478px;
+                    height: 100px;
+                }
+                &:last-child {
+                    margin-left: 4px
+                }
+            }
+        }
+    }
+}
+
+.bodyleft {
+    @include easing250;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -643px;
+    display: block;
+    width: 160px;
+    background-color: #cccccc;
+    img {
+        width: 160px;
+    }
+}
+
+.bodyright {
+    @include easing250;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: 483px;
+    display: block;
+    width: 160px;
+    background-color: #cccccc;
+    img {
+        width: 160px;
+    }
+}
