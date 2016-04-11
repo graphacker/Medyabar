@@ -1,4 +1,4 @@
-@media (min-width:1320px) and (max-width:1365px) {
+ /* @media (min-width:1320px) and (max-width:1365px) {
     .pagetopskin {
         width: 986px !important;
         margin-left: -493px !important;
@@ -34,4 +34,21 @@
 
 @media (max-width: 1024px) {
     // body{display: none !important}
-} 
+} */
+
+@media (min-width:1281px) and (max-width:1599px) {
+    .pagetopskin {
+        width: 1000px !important;
+        margin-left: -500px !important;
+        iframe , img {
+            width: 1000px !important;
+        }
+        
+    }
+    .bodyleft {
+        margin-left: -658px !important;
+    }
+    .bodyright {
+        margin-left: 498px !important;
+    }
+}

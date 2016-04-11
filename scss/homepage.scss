@@ -3,6 +3,10 @@
     height: 3200px;
 }
 
+.fl {
+    float: left;
+}
+
 .fixed {
     position: fixed;
     top: 0;
@@ -15,47 +19,40 @@
     z-index: 9999;
 }
 
-.container {@include easing250;
-    width: 960px;
-    margin: 0 auto;
-    background-color: #d2d2d2;
-    height: 1933px;
-    display: block;
-}
-
 .pagetopskin {
     @include easing150;
     position: absolute;
-    width: 966px;
+    width: 970px;
     left: 50%;
     top: 0;
-    margin-left: -483px;
+    margin-left: -480px;
     display: block;
-    height: 100px;
 }
 
 .pagetop {
-    width: 960px;
+    width: 970px;
     margin: 0 auto 10px auto;
     display: block;
     .firma {
         width: 100%;
         margin: 0 auto;
         img {
-            width: 960px;
+            width: 970px;
+            height: 90px;
         }
         iframe {
-            width: 960px;
+            width: 970px;
+            height: 90px;
         }
         .firmaikili {
-            width: 960px;
+            width: 970px;
             overflow: hidden;
             a {
                 display: block;
                 float: left;
                 img {
-                    width: 478px;
-                    height: 100px;
+                    width: 483px;
+                    height: 90px;
                 }
                 &:last-child {
                     margin-left: 4px
@@ -70,7 +67,7 @@
     position: absolute;
     left: 50%;
     top: 0;
-    margin-left: -643px;
+    margin-left: -645px;
     display: block;
     width: 160px;
     background-color: #cccccc;
@@ -84,11 +81,53 @@
     position: absolute;
     left: 50%;
     top: 0;
-    margin-left: 483px;
+    margin-left: 485px;
     display: block;
     width: 160px;
     background-color: #cccccc;
     img {
         width: 160px;
+    }
+}
+
+.container {
+    @include easing250;
+    width: 970px;
+    margin: 0 auto;
+    background-color: #d2d2d2;
+    height: 1933px;
+    display: block;
+    .logoarea {
+        width: 970px;
+        height: 300px;
+        overflow: hidden;
+        display: table;
+        .logo, .logoyan, .logobanner {
+            @extend .fl;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .logo {
+            width: 300px;
+            height: 100px;
+            display: block;
+            background-color: #fff;
+            box-sizing: border-box ;
+            padding-top: 14px; 
+        }
+        .logoyan {
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+            display: block;
+            background-color: lawngreen;
+        }
+        .logobanner {
+            height: 60px;
+            width: 468px;
+            overflow: hidden;
+            display: block;
+            background-color: gray;
+        }
     }
 }
