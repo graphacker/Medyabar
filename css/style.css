@@ -206,4 +206,37 @@ body {
       display: block;
       background-color: gray; }
 
+/********** Spor Sayfa */
+.sporSlider {
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 15px; }
+  .sporSlider img {
+    width: 645px;
+    height: 364px;
+    border: 5px solid #12a73a; }
+
+.sliderYan .sliderYanReklam {
+  padding: 0;
+  margin: 0;
+  float: left; }
+  .sliderYan .sliderYanReklam a {
+    padding: 0;
+    margin: 0; }
+    .sliderYan .sliderYanReklam a img {
+      width: 300px;
+      height: 250px; }
+.sliderYan .sliderYanWidget {
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-top: 15px; }
+  .sliderYan .sliderYanWidget a {
+    padding: 0;
+    margin: 0; }
+    .sliderYan .sliderYanWidget a img {
+      width: 300px;
+      height: 129px; }
+
 /*# sourceMappingURL=style.css.map */
