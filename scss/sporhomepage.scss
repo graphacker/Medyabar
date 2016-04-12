@@ -9,8 +9,25 @@
         height: 364px;
         border: 5px solid #12a73a;
     }
+    .sporSliderIndicator {
+        width: 645px;
+        margin: 0;
+        padding: 0;
+        background: #333;
+        ul {
+            width: 645px;
+            li {
+                float: left;
+                a {
+                    border-right: 1px solid #a1a1a1;
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
 }
- 
+
 .sliderYan {
     .sliderYanReklam {
         padding: 0;
