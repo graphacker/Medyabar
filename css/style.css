@@ -223,6 +223,24 @@ a {
     width: 645px;
     height: 364px;
     border: 5px solid #12a73a; }
+  .sporSlider .sporSliderIndicator {
+    width: 645px;
+    margin-top: -3px;
+    padding: 0;
+    background: #333; }
+    .sporSlider .sporSliderIndicator ul {
+      background: #333;
+      width: 655px;
+      float: left; }
+      .sporSlider .sporSliderIndicator ul li {
+        border-left: 1px solid #eee;
+        float: left;
+        padding: 5px 31px; }
+        .sporSlider .sporSliderIndicator ul li a {
+          color: #fff;
+          font-weight: 700; }
+        .sporSlider .sporSliderIndicator ul li:last-first {
+          border-left: none; }
 
 .sliderYan .sliderYanReklam {
   padding: 0;
@@ -244,6 +262,6 @@ a {
     margin: 0; }
     .sliderYan .sliderYanWidget a img {
       width: 300px;
-      height: 129px; }
+      height: 132px; }
 
 /*# sourceMappingURL=style.css.map */
