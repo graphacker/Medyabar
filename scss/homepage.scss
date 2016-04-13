@@ -6,7 +6,7 @@
 .fl {
     float: left;
 }
-
+.clear{clear:both}
 .fixed {
     position: fixed;
     top: 0;
@@ -94,26 +94,23 @@
     @include easing250;
     width: 970px;
     margin: 0 auto;
-    background-color: #d2d2d2;
+    background-color: #fff;
     height: 1933px;
     display: block;
     .logoarea {
         width: 970px;
-        height: 300px;
         overflow: hidden;
         background-color: #fff;
         .logo, .logoyan, .logobanner {
             @extend .fl;
-            overflow: hidden ;
-            display : block ;
+            overflow: hidden;
+            display: block;
         }
-
         .logo {
             width: 300px;
             height: 100px;
             display: block;
-            background-color: #fff;
-            img{
+            img {
                 margin-top: 13px;
             }
         }
@@ -126,20 +123,81 @@
             height: 60px;
             width: 468px;
             margin-top: 20px;
+            margin-left: 2px;
         }
     }
-    
-    nav{
-        ul{text-transform: uppercase;
-            li{float: left;
-                a{
-                    font : 1rem #232323;
-                    text-decoration : none;
+    nav {
+        width: 100%;
+        height: 40px;
+        background-color: #f7f7f7;
+        display: block;
+        ul {
+            text-transform: uppercase;
+            li {
+                float: left;
+                &:first-child > a {
+                    color: #55acee;
+                    border-left: none;
+                }
+                a {
+                    @include easing75;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 40px;
+                    display: block;
+                    text-decoration: none;
+                    padding-left: 17px;
+                    padding-right: 17px;
+                    border-left: 1px solid #f1f1f1;
+                    &:hover {
+                        background-color: #e6e6e6;
+                    }
                 }
             }
         }
     }
-    
-    
-    
+    .topslider {
+        height: 310px;
+        width: 970px;
+        background-color: gray;
+        margin: 20px 0 20px 0;
+    }
+    .topslideralt {
+        .topsldaltfirmalar {
+            width: 970px;
+            overflow: hidden;
+        }
+    }
+    .ortaikili {
+        margin-top : 20px;
+        margin-bottom: 20px;
+        .ikilisol {
+            width: 477.5px;
+            height: 270px;
+            background-color: gray;
+            float: left;
+        }
+        .ikilisag {
+            width: 477.5px;
+            height: 270px;
+            background-color: gray;
+            float: left;
+            margin-left: 15px;
+        }
+    }
+    .dortlu {
+        .dortluhaber {position: relative;
+            width: 231px;
+            height: 131px;
+            background-color: gray;
+            float: left;
+             &:nth-child(even){margin-left:15px;}
+             &:nth-child(3){margin-left:15px;}
+             .haberbaslik{
+                 height: 20px;width: 100%;color: white;
+             }   
+             
+        }
+       
+    }
 }
