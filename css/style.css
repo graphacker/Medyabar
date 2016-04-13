@@ -276,14 +276,14 @@ a {
   padding: 0;
   margin: 0;
   float: left;
-  margin-right: 15px; }
+  margin-right: 15px;
+  margin-bottom: 15px; }
   .sporSlider img {
     width: 645px;
     height: 364px;
-    border: 5px solid #12a73a; }
+    border: 5px solid #BB1014; }
   .sporSlider .sporSliderIndicator {
     width: 645px;
-<<<<<<< HEAD
     margin-top: -3px;
     padding: 0;
     background: #333; }
@@ -298,21 +298,8 @@ a {
         .sporSlider .sporSliderIndicator ul li a {
           color: #fff;
           font-weight: 700; }
-        .sporSlider .sporSliderIndicator ul li:last-first {
+        .sporSlider .sporSliderIndicator ul li:last-child {
           border-left: none; }
-=======
-    margin: 0;
-    padding: 0;
-    background: #333; }
-    .sporSlider .sporSliderIndicator ul {
-      width: 645px; }
-      .sporSlider .sporSliderIndicator ul li {
-        float: left; }
-        .sporSlider .sporSliderIndicator ul li a {
-          border-right: 1px solid #a1a1a1;
-          color: #fff;
-          font-weight: 700; }
->>>>>>> d1c77b2ce0add267f10ef0246ca9129278a091a1
 
 .sliderYan .sliderYanReklam {
   padding: 0;
@@ -335,5 +322,114 @@ a {
     .sliderYan .sliderYanWidget a img {
       width: 300px;
       height: 132px; }
+
+.sliderAltReklam {
+  margin-top: 10px; }
+
+.buyukHaberler {
+  margin-top: 15px;
+  width: 655px;
+  float: left; }
+  .buyukHaberler .haberKapsayici {
+    position: relative;
+    width: 320px;
+    height: 180px;
+    float: left;
+    margin-bottom: 15px;
+    overflow: hidden; }
+    .buyukHaberler .haberKapsayici:hover > img {
+      transform: scale(1.03); }
+    .buyukHaberler .haberKapsayici:hover > .haberAciklama {
+      bottom: 5px;
+      transform: scale(1.04); }
+    .buyukHaberler .haberKapsayici .haberOpacity {
+      position: absolute;
+      width: 320px;
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, black 100%);
+      background: linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, black 100%);
+      height: 180px;
+      top: 0;
+      left: 0;
+      z-index: 5; }
+    .buyukHaberler .haberKapsayici img {
+      -webkit-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      width: 320px;
+      height: 180px; }
+    .buyukHaberler .haberKapsayici .haberAciklama {
+      -webkit-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+      position: absolute;
+      z-index: 5;
+      position: absolute;
+      bottom: -25px;
+      float: left;
+      overflow: hidden; }
+      .buyukHaberler .haberKapsayici .haberAciklama h2 {
+        margin: 0 auto;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 700;
+        padding: 10px 5px;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 0px 0px 0px #000000;
+        color: #fff; }
+        .buyukHaberler .haberKapsayici .haberAciklama h2 a {
+          color: #fff; }
+      .buyukHaberler .haberKapsayici .haberAciklama p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #ddd;
+        padding: 5px 5px; }
+        .buyukHaberler .haberKapsayici .haberAciklama p a {
+          color: #ddd; }
+    .buyukHaberler .haberKapsayici:not(:nth-child(2n-1)) {
+      margin-left: 15px; }
+
+.buyukHaberYaniPuanDurumu {
+  width: 300px;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  margin-left: 13px;
+  margin-top: 15px;
+  border: 1px solid #ccc; }
+  .buyukHaberYaniPuanDurumu img {
+    width: 300px;
+    height: 250px; }
+  .buyukHaberYaniPuanDurumu h2 {
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333; }
+  .buyukHaberYaniPuanDurumu table {
+    width: 100%; }
+    .buyukHaberYaniPuanDurumu table tr {
+      border: 1px solid #444;
+      border-collapse: collapse; }
+      .buyukHaberYaniPuanDurumu table tr:first-child {
+        background: rgba(0, 0, 0, 0.4); }
+      .buyukHaberYaniPuanDurumu table tr:hover {
+        background: rgba(0, 0, 0, 0.1); }
+    .buyukHaberYaniPuanDurumu table th {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      font-size: 13px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,10 +4,11 @@
     margin: 0;
     float: left;
     margin-right: 15px;
+    margin-bottom: 15px;
     img {
         width: 645px;
         height: 364px;
-        border: 5px solid #12a73a;
+        border: 5px solid #BB1014;
     }
     .sporSliderIndicator {
         width: 645px;
@@ -26,7 +27,7 @@
                     color: #fff;
                     font-weight: 700;
                 }
-                &:last-first{
+                &:last-child {
                     border-left: none;
                 }
             }
@@ -60,6 +61,130 @@
                 width: 300px;
                 height: 132px;
             }
+        }
+    }
+}
+
+.sliderAltReklam {
+    margin-top: 10px;
+}
+
+.buyukHaberler {
+    margin-top: 15px;
+    width: 655px;
+    float: left;
+    .haberKapsayici {
+        position: relative;
+        width: 320px;
+        height: 180px;
+        float: left;
+        margin-bottom: 15px;
+        overflow: hidden;
+        &:hover > img {
+            transform: scale(1.03);
+        }
+        &:hover > .haberAciklama {
+            bottom: 5px;
+            transform: scale(1.04);
+        }
+        .haberOpacity {
+            position: absolute;
+            width: 320px;
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
+            background: linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
+            height: 180px;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+        img {
+            @include easing250;
+            width: 320px;
+            height: 180px;
+        }
+        .haberAciklama {
+            @include easing250;
+            position: absolute;
+            z-index: 5;
+            position: absolute;
+            bottom: -25px;
+            float: left;
+            overflow: hidden;
+            h2 {
+                margin: 0 auto;
+                width: 250px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: 700;
+                padding: 10px 5px;
+                text-transform: capitalize;
+                letter-spacing: 0.5px;
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+                text-shadow: 0px 0px 0px #000000;
+                color: #fff;
+                a {
+                    color: #fff;
+                }
+            }
+            p {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 14px;
+                width: 300px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #ddd;
+                padding: 5px 5px;
+                a {
+                    color: #ddd;
+                }
+            }
+        }
+        &:not(:nth-child(2n-1)) {
+            margin-left: 15px;
+        }
+    }
+}
+
+.buyukHaberYaniPuanDurumu {
+    width: 300px;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+    margin-left: 13px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    img {
+        width: 300px;
+        height: 250px;
+    }
+    h2 {
+        padding: 5px 15px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+    }
+    table {
+        width: 100%;
+        tr {
+            border: 1px solid #444;
+            border-collapse: collapse;
+            &:first-child {
+                background: rgba(0, 0, 0, .4);
+            }
+            &:hover {
+                background: rgba(0, 0, 0, .1);
+            }
+        }
+        th {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            font-size: 13px;
         }
     }
 }
