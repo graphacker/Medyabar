@@ -95,6 +95,9 @@ a {
 .fl, .container .logoarea .logo, .container .logoarea .logoyan, .container .logoarea .logobanner {
   float: left; }
 
+.clear {
+  clear: both; }
+
 .fixed, #sizetext {
   position: fixed;
   top: 0; }
@@ -179,12 +182,11 @@ a {
   transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
   width: 970px;
   margin: 0 auto;
-  background-color: #d2d2d2;
+  background-color: #fff;
   height: 1933px;
   display: block; }
   .container .logoarea {
     width: 970px;
-    height: 300px;
     overflow: hidden;
     background-color: #fff; }
     .container .logoarea .logo, .container .logoarea .logoyan, .container .logoarea .logobanner {
@@ -193,8 +195,7 @@ a {
     .container .logoarea .logo {
       width: 300px;
       height: 100px;
-      display: block;
-      background-color: #fff; }
+      display: block; }
       .container .logoarea .logo img {
         margin-top: 13px; }
     .container .logoarea .logoyan {
@@ -204,14 +205,71 @@ a {
     .container .logoarea .logobanner {
       height: 60px;
       width: 468px;
-      margin-top: 20px; }
-  .container nav ul {
-    text-transform: uppercase; }
-    .container nav ul li {
+      margin-top: 20px;
+      margin-left: 2px; }
+  .container nav {
+    width: 100%;
+    height: 40px;
+    background-color: #f7f7f7;
+    display: block; }
+    .container nav ul {
+      text-transform: uppercase; }
+      .container nav ul li {
+        float: left; }
+        .container nav ul li:first-child > a {
+          color: #55acee;
+          border-left: none; }
+        .container nav ul li a {
+          -webkit-transition: all 75ms cubic-bezier(0.42, 0, 0.58, 1);
+          -moz-transition: all 75ms cubic-bezier(0.42, 0, 0.58, 1);
+          -o-transition: all 75ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: all 75ms cubic-bezier(0.42, 0, 0.58, 1);
+          font-size: 1rem;
+          font-weight: 700;
+          line-height: 40px;
+          display: block;
+          text-decoration: none;
+          padding-left: 17px;
+          padding-right: 17px;
+          border-left: 1px solid #f1f1f1; }
+          .container nav ul li a:hover {
+            background-color: #e6e6e6; }
+  .container .topslider {
+    height: 310px;
+    width: 970px;
+    background-color: gray;
+    margin: 20px 0 20px 0; }
+  .container .topslideralt .topsldaltfirmalar {
+    width: 970px;
+    overflow: hidden; }
+  .container .ortaikili {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .container .ortaikili .ikilisol {
+      width: 477.5px;
+      height: 270px;
+      background-color: gray;
       float: left; }
-      .container nav ul li a {
-        font: 1rem #232323;
-        text-decoration: none; }
+    .container .ortaikili .ikilisag {
+      width: 477.5px;
+      height: 270px;
+      background-color: gray;
+      float: left;
+      margin-left: 15px; }
+  .container .dortlu .dortluhaber {
+    position: relative;
+    width: 231px;
+    height: 131px;
+    background-color: gray;
+    float: left; }
+    .container .dortlu .dortluhaber:nth-child(even) {
+      margin-left: 15px; }
+    .container .dortlu .dortluhaber:nth-child(3) {
+      margin-left: 15px; }
+    .container .dortlu .dortluhaber .haberbaslik {
+      height: 20px;
+      width: 100%;
+      color: white; }
 
 /********** Spor Sayfa */
 .sporSlider {
@@ -225,6 +283,7 @@ a {
     border: 5px solid #12a73a; }
   .sporSlider .sporSliderIndicator {
     width: 645px;
+<<<<<<< HEAD
     margin-top: -3px;
     padding: 0;
     background: #333; }
@@ -241,6 +300,19 @@ a {
           font-weight: 700; }
         .sporSlider .sporSliderIndicator ul li:last-first {
           border-left: none; }
+=======
+    margin: 0;
+    padding: 0;
+    background: #333; }
+    .sporSlider .sporSliderIndicator ul {
+      width: 645px; }
+      .sporSlider .sporSliderIndicator ul li {
+        float: left; }
+        .sporSlider .sporSliderIndicator ul li a {
+          border-right: 1px solid #a1a1a1;
+          color: #fff;
+          font-weight: 700; }
+>>>>>>> d1c77b2ce0add267f10ef0246ca9129278a091a1
 
 .sliderYan .sliderYanReklam {
   padding: 0;
