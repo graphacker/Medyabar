@@ -41,9 +41,10 @@ $(function() {
                 sliderLi.not(' :eq(' + intervalIndex + ')').fadeOut(100);
                 sliderLi.eq(intervalIndex).fadeIn(100);
                 intervalIndex += 1;
-            }, 3000)
+            }, 300000)
         }
     }
+    
     $('.sporSlide').sporSlider();
     /** Spor Slider */
 });
