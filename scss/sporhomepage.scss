@@ -59,6 +59,12 @@
     }
 }
 
+.sliderUstReklam {
+    width: 970px;
+    height: 90px;
+    margin-bottom: 15px;
+}
+
 .sporSlider {
     padding: 0;
     margin: 0;
@@ -395,6 +401,9 @@
             width: 320px;
             background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
             background: linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
+            background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
             height: 180px;
             top: 0;
             left: 0;
@@ -460,7 +469,7 @@
     margin-left: 13px;
     margin-top: 15px;
     border: 1px solid #ccc;
-    overflow-y: scroll;
+    overflow: hidden;
     &::-webkit-scrollbar {
         color: #fff;
         width: 7px;
@@ -480,15 +489,20 @@
         padding: 5px 15px;
         font-size: 20px;
         font-weight: 700;
-        color: #333;
+        text-transform: uppercase;
+        background: #333;
+        color: #fff;
+        padding: 10px 5px;
     }
     table {
+        background: #fff;
         width: 100%;
         tr {
-            border: 1px solid #444;
             border-collapse: collapse;
             &:first-child {
                 background: rgba(0, 0, 0, .4);
+                font-weight: 700;
+                border-bottom: 3px solid #444;
             }
             &:hover:not(:first-child) {
                 background: rgba(0, 0, 0, .1);
@@ -496,7 +510,6 @@
         }
         th {
             padding: 5px;
-            border: 1px solid #ccc;
             border-collapse: collapse;
             font-size: 13px;
             &:nth-child(n+5) {
@@ -517,42 +530,78 @@
     }
 }
 
-.ucluHaber {
-    width: 655px;
+.uclu {
     float: left;
-    margin-top: 15px;
-    .ucluHaberKapsayici {
+    width: 655px;
+    .ucluHaber {
+        width: 655px;
         float: left;
-        width: 208px;
-        height: 170px;
-        border: 1px solid #ddd;
-        margin-bottom: 15px;
-        overflow: hidden;
-        a:hover > h1 {
-            @include easing75;
-            color: #BB1014;
-        }
-        img {
+        margin-top: 15px;
+        .ucluHaberKapsayici {
+            float: left;
             width: 208px;
-            height: 117px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 18px;
-            font-weight: 700;
-            background: #fff;
-            padding: 5px 0;
-            height: 32px;
-            text-align: left;
-            display: -webkit-box;
-            max-width: 100%;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
+            height: 170px;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 3px rgba(50, 50, 50, .2);
+            margin-bottom: 15px;
             overflow: hidden;
-            text-overflow: ellipsis;
+            a:hover > h1 {
+                @include easing75;
+                color: #BB1014;
+            }
+            img {
+                width: 208px;
+                height: 117px;
+            }
+            h1 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 700;
+                background: #fff;
+                padding: 5px 2px;
+                height: 30px;
+                text-align: left;
+                display: -webkit-box;
+                max-width: 100%;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &:not(:nth-child(3n-2)) {
+                margin-left: 12px;
+            }
         }
-        &:not(:nth-child(3n-2)) {
-            margin-left: 12px;
+    }
+    .ikiliGenis {
+        width: 655px;
+        .genisWrapper {
+            margin-bottom: 15px;
+            .genisResim {
+                width: 320px;
+                height: 180px;
+                float: left;
+                img {
+                    width: 320px;
+                    height: 180px;
+                }
+            }
+            .genisAciklama {
+                overflow: hidden;
+                margin-left: 15px;
+                width: 320px;
+                height: 180px;
+                float: left;
+                h1 {
+                    margin-top: 15px;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                p {
+                    margin: 10px 0;
+                    color: #333;
+                }
+            }
         }
     }
 }
@@ -567,5 +616,163 @@
     img {
         width: 300px;
         height: 255px;
+    }
+    .haber264_spor {
+        width: 300px;
+        overflow: hidden;
+        margin: 15px auto;
+        max-width: 300px;
+        border: 1px solid #a4a4a4;
+        h1 {
+            //border-top: 3px solid #333;
+            background: #333;
+            color: #fff;
+            padding: 10px 5px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .haber264_videos {
+            width: 300px;
+            position: relative;
+            span {
+                position: absolute;
+                top: 88px;
+                left: -59px;
+                transform: rotate(-90deg);
+                color: #333;
+                font-size: 12px;
+            }
+            img {
+                width: 300px;
+                height: 170px;
+                margin: 7.5px 0;
+                img:first-child {
+                    margin: -5px 0px;
+                }
+            }
+        }
+    }
+    .sosyalmedya_spor {
+        width: 300px;
+        height: 200px;
+        background: #f1f2f3;
+        overflow: hidden;
+        margin-bottom: 15px;
+        table {
+            width: 300px;
+            height: 200px;
+            tr {
+                width: 301px;
+                height: 98px;
+                th {
+                    position: relative;
+                    width: 150px;
+                    height: 98px;
+                    i {
+                        position: absolute;
+                        font-size: 60px;
+                        top: 20px;
+                        left: 50px;
+                        color: #d1d2d3;
+                        @include easing150;
+                        &:hover {
+                            color: #999;
+                        }
+                    }
+                    &:nth-child(2n-1) {
+                        border-right: 1px solid #d1d2d3;
+                    }
+                }
+                &:first-child {
+                    border-bottom: 1px solid #d1d2d3;
+                }
+            }
+        }
+    }
+    .yazarlar_spor {
+        width: 300px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        height: 450px;
+        h1 {
+            position: relative;
+            background: #BB1014;
+            color: #fff;
+            padding: 10px 5px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            i{
+                position: absolute;
+                font-size: 15px;
+                cursor:pointer;
+            }
+            i#next{
+                top:15px;
+                right: 20px;
+            }
+            i#prev{
+                top:15px;
+                right:40px;
+            }
+            .yazaractive{
+                color:#333;
+            }
+        }
+        ul {
+            list-style-type: none;
+            width: 300px;
+            height: 420px;
+            overflow: hidden;
+            
+            .yazi_spor {
+                width: 300px;
+                padding: 20px 0;
+                height: 64px;
+                background: #2f2f2f;
+                position: relative;
+                h2 {
+                    width: 200px;
+                    float: left;
+                    padding: 1px 10px;
+                    font-weight: 100;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    word-wrap: break-word;
+                    line-height: 20px;
+                    position: relative;
+                    text-overflow: ellipsis;
+                    height: 40px;
+                    a {
+                        font-weight: 700;
+                        color: #fff;
+                        @include easing150;
+                        &:hover {
+                            color: #BB1014;
+                        }
+                    }
+                }
+                span {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 10px;
+                    font-size: 13px;
+                    a {
+                        color: #949494;
+                    }
+                }
+                img {
+                    width: 64px;
+                    height: 64px;
+                    float: left;
+                    border-radius: 32px;
+                }
+                &:nth-child(odd) {
+                    background: #363636;
+                }
+            }
+        }
     }
 }

@@ -41,11 +41,36 @@ $(function() {
                 sliderLi.not(' :eq(' + intervalIndex + ')').fadeOut(100);
                 sliderLi.eq(intervalIndex).fadeIn(100);
                 intervalIndex += 1;
-            }, 300000)
+            }, 3000)
         }
     }
     
     $('.sporSlide').sporSlider();
     /** Spor Slider */
+    
+    /** Yazar Slider */
+    
+    $.fn.yazarSlider = function(){
+        var yazarUl = this.find('ul');
+        var yazarLi = this.find('.yazi_spor');
+        $('#next').click(function(){
+            $(this).parent().find('i').removeClass('yazaractive');
+            $(this).addClass('yazaractive');
+            yazarLi.eq(0).stop().animate(
+                {'margin-top':-420+'px'}
+                ,500)
+        })
+        
+        $('#prev').click(function(){
+            $(this).parent().find('i').removeClass('yazaractive');
+            $(this).addClass('yazaractive');
+            yazarLi.eq(0).stop().animate(
+                {'margin-top':0 +'px'}
+                ,500)
+        })
+    }
+    $('.yazarlar_spor').yazarSlider();
+   
+    /** Yazar Slider */
 });
 
