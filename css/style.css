@@ -200,7 +200,7 @@ a {
         margin-top: 13px; }
     .container .logoarea .logoyan {
       width: 200px;
-      height: 100px;
+      height: 60px;
       margin-top: 20px; }
     .container .logoarea .logobanner {
       height: 60px;
@@ -300,8 +300,6 @@ a {
     -moz-transition: all 150ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 150ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 150ms cubic-bezier(0.42, 0, 0.58, 1); }
-    .sporHeader .arama:hover {
-      margin-right: 0; }
     .sporHeader .arama .aramaBtn {
       background-image: url("../img/webimg/arama.png");
       width: 30px;
@@ -311,19 +309,78 @@ a {
       cursor: pointer;
       z-index: -1;
       float: left; }
-    .sporHeader .arama .aramaInput input {
-      height: 30px;
-      border: none;
-      background: #ddd;
-      margin: 10px;
-      padding: 0 0 0 5px;
-      font-weight: 700; }
-      .sporHeader .arama .aramaInput input:focus {
-        box-shadow: 0 0 0 0 transparent;
-        border: 1px solid #000; }
-      .sporHeader .arama .aramaInput input:active {
-        box-shadow: 0 0 0 0 transparent;
-        border: 1px solid #000; }
+
+.aramaBody {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background: rgba(255, 255, 255, 0.98); }
+  .aramaBody .ara {
+    position: relative;
+    width: 100%;
+    padding: 150px 0 100px 0; }
+    .aramaBody .ara h1 {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 70px;
+      color: black; }
+      .aramaBody .ara h1 img {
+        position: absolute;
+        width: 17%;
+        top: -3px;
+        left: 2%; }
+      .aramaBody .ara h1 span {
+        position: absolute;
+        left: 19%;
+        font-size: 44px; }
+    .aramaBody .ara .araback {
+      position: absolute;
+      left: 10%;
+      color: rgba(51, 51, 51, 0.05);
+      font-size: 300px;
+      z-index: -1;
+      top: 6%; }
+    .aramaBody .ara form {
+      width: 80%;
+      margin: 15% auto 10%; }
+      .aramaBody .ara form input {
+        width: 90%;
+        color: rgba(51, 51, 51, 0.7);
+        font-size: 50px;
+        height: 50px;
+        border: none;
+        border-bottom: 3px solid rgba(51, 51, 51, 0.2);
+        float: left; }
+        .aramaBody .ara form input:focus {
+          outline: none; }
+      .aramaBody .ara form button {
+        width: 10%;
+        background: transparent;
+        height: 70px;
+        border: none; }
+        .aramaBody .ara form button:focus {
+          outline: none; }
+        .aramaBody .ara form button i {
+          color: rgba(51, 51, 51, 0.3);
+          cursor: pointer;
+          font-size: 45px; }
+      .aramaBody .ara form p {
+        margin: 10px 0;
+        color: #aaa; }
+        .aramaBody .ara form p strong {
+          color: #000;
+          font-weight: bold; }
+  .aramaBody .aramaKapat {
+    position: absolute;
+    top: 20px;
+    width: 30px;
+    right: 30px;
+    font-size: 45px;
+    z-index: 999999;
+    cursor: pointer; }
 
 .sliderUstReklam {
   width: 970px;
@@ -340,18 +397,18 @@ a {
     border: 5px solid #333;
     position: relative;
     width: 645px;
-    height: 364px;
+    height: 430px;
     overflow: hidden; }
     .sporSlider .sporSlide ul {
-      height: 364px; }
+      height: 430px; }
       .sporSlider .sporSlide ul li {
         position: relative;
         float: left;
         width: 645px;
-        height: 364px; }
+        height: 430px; }
         .sporSlider .sporSlide ul li a img {
           width: 645px;
-          height: 364px; }
+          height: 430px; }
         .sporSlider .sporSlide ul li a .sliderTitle {
           width: 250px;
           height: 250px;
@@ -582,13 +639,15 @@ a {
 .sliderYan .sliderYanReklam {
   padding: 0;
   margin: 0;
-  float: left; }
+  float: left;
+  width: 300px;
+  height: 250px; }
   .sliderYan .sliderYanReklam a {
     padding: 0;
     margin: 0; }
     .sliderYan .sliderYanReklam a img {
-      width: 300px;
-      height: 250px; }
+      width: 100%;
+      height: 100%; }
 .sliderYan .sliderYanWidget {
   padding: 0;
   margin: 0;
@@ -602,6 +661,8 @@ a {
       height: 132px; }
 
 .sliderAltReklam {
+  width: 970px;
+  height: 90px;
   margin-top: 10px; }
 
 .buyukHaberler {
@@ -611,7 +672,7 @@ a {
   .buyukHaberler .haberKapsayici {
     position: relative;
     width: 320px;
-    height: 180px;
+    height: 213px;
     float: left;
     margin-bottom: 15px;
     overflow: hidden; }
@@ -628,7 +689,7 @@ a {
       background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, black 100%);
       background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, black 100%);
       background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 70%, black 100%);
-      height: 180px;
+      height: 213px;
       top: 0;
       left: 0;
       z-index: 5; }
@@ -638,7 +699,7 @@ a {
       -o-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
       transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
       width: 320px;
-      height: 180px; }
+      height: 213px; }
     .buyukHaberler .haberKapsayici .haberAciklama {
       -webkit-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
       -moz-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -746,7 +807,7 @@ a {
     .uclu .ucluHaber .ucluHaberKapsayici {
       float: left;
       width: 208px;
-      height: 170px;
+      height: 193px;
       border: 1px solid #ddd;
       box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
       margin-bottom: 15px;
@@ -759,7 +820,7 @@ a {
         color: #BB1014; }
       .uclu .ucluHaber .ucluHaberKapsayici img {
         width: 208px;
-        height: 117px; }
+        height: 138px; }
       .uclu .ucluHaber .ucluHaberKapsayici h1 {
         margin: 0;
         font-size: 18px;
@@ -827,18 +888,14 @@ a {
     .ucluHaberYani .haber264_spor .haber264_videos {
       width: 300px;
       position: relative; }
-      .ucluHaberYani .haber264_spor .haber264_videos span {
-        position: absolute;
-        top: 88px;
-        left: -59px;
-        transform: rotate(-90deg);
-        color: #333;
-        font-size: 12px; }
-      .ucluHaberYani .haber264_spor .haber264_videos img {
+      .ucluHaberYani .haber264_spor .haber264_videos .haber264_video {
         width: 300px;
-        height: 170px;
+        height: 200px;
         margin: 7.5px 0; }
-        .ucluHaberYani .haber264_spor .haber264_videos img img:first-child {
+        .ucluHaberYani .haber264_spor .haber264_videos .haber264_video img {
+          width: 100%;
+          height: 100%; }
+        .ucluHaberYani .haber264_spor .haber264_videos .haber264_video:first-child {
           margin: -5px 0px; }
   .ucluHaberYani .sosyalmedya_spor {
     width: 300px;

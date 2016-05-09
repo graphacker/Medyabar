@@ -72,5 +72,16 @@ $(function() {
     $('.yazarlar_spor').yazarSlider();
    
     /** Yazar Slider */
+    
+    /** Arama Acma Butonu */
+    $('.arama .aramaBtn').click(function(){
+        $('.aramaBody').fadeIn(200);
+        $('body').css('overflow-y','hidden');
+    })
+    $('.aramaBody .aramaKapat').click(function(){
+        $('.aramaBody').fadeOut(200);
+        $('body').css('overflow-y','scroll');
+    })
+    /** Arama Acma Butonu */
 });
 
